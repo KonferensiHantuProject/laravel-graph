@@ -9,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    // Relationship
+    // Inverse
     public function author()
     {
         return $this->belongsTo(User::class, 'user_id');
