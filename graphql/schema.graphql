@@ -21,7 +21,21 @@ type Query {
 
 " Mutation "
 type Mutation {
-  createUser(name: String!, email: String!, password: String!): User! @create
+
+  " Create User "
+  createUser(
+    name: String!, 
+    email: String!, 
+    password: String!
+  ): User! @create
+
+  " Update User "
+  updateUser(
+    id: ID!, 
+    name: String,
+    email: String
+  ): User @update
+  
 }
 
 "Account of a person who utilizes this application."
