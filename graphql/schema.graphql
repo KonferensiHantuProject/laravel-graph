@@ -20,6 +20,7 @@ type Query {
 
     " Posts "
     posts: [Post!]! @all
+    post(id: ID @eq): Post @find
 }
 
 " Mutation "
@@ -70,6 +71,8 @@ type User {
 
     "When the account was last updated."
     updated_at: DateTime!
+
+    posts: [Post]! @hasMany
 }
 
 " Post Type "
