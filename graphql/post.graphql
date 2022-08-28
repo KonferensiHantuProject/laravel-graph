@@ -1,5 +1,5 @@
 "Indicates what fields are available at the top level of a query operation."
-extend type Query {
+type Query {
     " Posts "
     posts: [Post!]! @all
     post(id: ID @eq): Post @find
