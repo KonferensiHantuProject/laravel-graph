@@ -1,3 +1,3 @@
 # Laravel Graph
 
-### Practice Result of Laravel Graphql
+### Practice Result of Laravel Graphql with Lighthouse
